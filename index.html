@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="el">
 <head>
     <meta charset="UTF-8">
@@ -321,16 +321,19 @@
 
             .slide,
             .slide.active {
-                height: 100%;
+                height: auto;
                 min-height: 0;
+                max-height: none;
+                overflow: visible;
                 grid-template-columns: 1fr;
                 border-radius: 18px;
                 padding: 18px;
             }
 
             .stage {
-                align-items: stretch;
+                align-items: start;
                 padding: 12px;
+                overflow-y: auto;
             }
 
             .hero-img,
